@@ -7,7 +7,9 @@
     "start": "node server.js",
     "dev": "nodemon server.js",
     "lint": "eslint .",
-    "test": "mocha tests/**/*.test.js"
+    "test": "mocha tests/**/*.test.js",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
   },
   "keywords": [
     "nodejs",
@@ -28,6 +30,7 @@
     "morgan": "^1.10.0"             
   },
   "devDependencies": {
+    "prettier": "^3.3.3",
     "chai": "^4.3.6",               
     "eslint": "^8.45.0",            
     "mocha": "^10.2.0",             
