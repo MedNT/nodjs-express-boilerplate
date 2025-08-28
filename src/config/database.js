@@ -1,1 +1,9 @@
-// Database configuration File (e.g., MongoDB, MySQL)
+// Database configuration File
+const { createClient } = require('@supabase/supabase-js');
+const env = require('./env');
+
+const supabase = createClient(env.supabaseUrl, env.supabaseKey);
+
+module.exports = {
+  supabase,
+};
